@@ -5,6 +5,7 @@ Version: 1.0
 """
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import getpass
 import time
 
 def  createDriver():
@@ -36,7 +37,7 @@ def closeWindow(driver):
 
 site = "https://www.reddit.com/"
 name = raw_input('Username: ')
-pwd = raw_input("Password: ")
+pwd = getpass.getpass()
 title = "The plural of \"Octopus\""
 
 
